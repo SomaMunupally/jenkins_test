@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    // agent any
+    agent {
+        label 'MyLinuxNode'
+    }
     stages {
         stage("setup parameter") {
             steps {
